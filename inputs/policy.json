@@ -1,0 +1,73 @@
+[
+    {
+      "id": "689c5f1a-f2b1-11ea-a4c8-0050569de26b",
+      "name": "ignore ICMP",
+      "protocols": [
+        "ICMP"
+      ],
+      "verdict": "IGNORE"
+    },
+    {
+      "id": "c7167eba-f2af-11ea-a947-0050569dae70",
+      "name": "ignore loopback",
+      "ips": [
+        "127.0.0.0/8"
+      ],
+      "verdict": "IGNORE"
+    },
+    {
+      "id": "3793072e-f2b2-11ea-b82e-0050569de26b",
+      "name": "inspect SSH",
+      "ports": [
+        {
+          "start": 22,
+          "end": 22
+        }
+      ],
+      "verdict": "INSPECT"
+    },
+    {
+      "id": "aff46334-f2b2-11ea-a6f5-0050569de26b",
+      "name": "ignore database DMZ",
+      "ips": [
+        "192.128.0.0/16"
+      ],
+      "verdict": "IGNORE"
+    },
+    {
+      "id": "0b6f4a12-f2b3-11ea-80c0-0050569de26b",
+      "name": "ignore allowed ports",
+      "ports": [
+        {
+          "start": 50,
+          "end": 150
+        }
+      ],
+      "verdict": "IGNORE"
+    },
+    {
+      "id": "c36049aa-f2b3-11ea-aa02-0050569de26b",
+      "name": "inspect Martin's laptop",
+      "ips": [
+        "192.0.0.3/32"
+      ],
+      "verdict": "INSPECT"
+    },
+    {
+      "id": "eca4acba-f2b4-11ea-852a-0050569de26b",
+      "name": "inspect DNS",
+      "protocols": [
+        "UDP"
+      ],
+      "ips": [
+        "10.0.0.8/32"
+      ],
+      "ports": [
+        {
+          "start": 53,
+          "end": 53
+        }
+      ],
+      "verdict": "INSPECT"
+    }
+  ]
