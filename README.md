@@ -25,33 +25,33 @@ cd <repository-folder>
 
 ## File Structure
 
-* `<span>app.py</span>`: The main application script.
-* `<span>inputs/attacks.csv</span>`: Input file containing attack data.
-* `<span>inputs/policy.json</span>`: Input file containing policy rules.
-* `<span>suspicious_connections.csv</span>`: Output file containing suspicious connections identified.
-* `<span>logs.log</span>`: Log file generated during execution.
+* `app.py`: The main application script.
+* `inputs/attacks.csv`: Input file containing attack data.
+* `inputs/policy.json`: Input file containing policy rules.
+* `suspicious_connections.csv`: Output file containing suspicious connections identified.
+* `logs.log`: Log file generated during execution.
 
 ## Usage
 
-1. Place the required input files in the `<span>inputs</span>` folder:
+1. Place the required input files in the `inputs` folder:
 
-   * `<span>attacks.csv</span>`: Contains connection data to analyze.
-   * `<span>policy.json</span>`: Defines the policies to evaluate attacks.
+   * `attacks.csv`: Contains connection data to analyze.
+   * `policy.json`: Defines the policies to evaluate attacks.
 2. Run the application:
 
    ```
    python app.py
    ```
 
-   * Add the `<span>-d</span>` flag to enable debug logging:
+   * Add the `-d` flag to enable debug logging:
      ```
      python app.py -d DEBUG
      ```
 3. The output will include:
 
    * A summary of **CLEAN** and **SUSPICIOUS** attacks in the terminal.
-   * Detailed logs in the `<span>logs.log</span>` file.
-   * Suspicious attacks saved to `<span>suspicious_connections.csv</span>`.
+   * Detailed logs in the `logs.log` file.
+   * Suspicious attacks saved to `suspicious_connections.csv`.
 
 ## Logging
 
@@ -62,7 +62,7 @@ Logs provide detailed information about:
 * Caching statistics
 * Application performance
 
-Logs are saved in `<span>logs.log</span>`.
+Logs are saved in `logs.log`.
 
 ## License
 
